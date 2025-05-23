@@ -10,7 +10,7 @@ csrf_token_tag = soup.find('meta', attrs={'name': 'csrf-token'})
 csrf_token = csrf_token_tag['content'] if csrf_token_tag else None
 
 if not csrf_token:
-    print("Could not find CSRF token. Aborting.")
+    print("Could not find CSRF token. Skill issue.")
     exit()
 
 headers = {
